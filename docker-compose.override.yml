@@ -40,7 +40,7 @@ services:
       - demo
 
   solr-init:
-    image: ${REGISTRY}demo/base/lighthouse-xp0-modules-base-solr-init:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}-${BASE_MODULE_VERSION}
+    image: ${REGISTRY}community/sitecore-xp1-custom-sxa-solr-init:${SITECORE_VERSION}-${WINDOWSSERVERCORE_VERSION}
     networks:
       - demo
 
