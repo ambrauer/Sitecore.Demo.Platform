@@ -98,6 +98,13 @@ const nextConfig = {
   
   webpack: (config, options) => {
     applyGraphQLCodeGenerationLoaders(config, options);
+  
+    // Allow conditional compilation for prerender "modes" (SSG/SSR)
+    // using https://www.npmjs.com/package/webpack-conditional-loader
+    config.module.rules.push({
+      test: /\.tsx$/,
+      use: [options.defaultLoaders.babel, 'webpack-conditional-loader']
+    })
 
     return config;
   },
