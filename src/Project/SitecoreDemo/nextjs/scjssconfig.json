@@ -1,0 +1,9 @@
+{
+  "sitecore": {
+    "instancePath": "..\\..\\..\\..\\data\\cm\\src",
+    "apiKey": "{28AFF7FB-DB35-4A91-9A5D-20A277FF860F}",
+    "deploySecret": "kctv6pzr5nu8n886ijnphxh1rscbr7von45fwgwntyh",
+    "deployUrl": "https://cd.lighthouse.localhost/sitecore/api/jss/import",
+    "layoutServiceHost": "https://cd.lighthouse.localhost"
+  }
+}
