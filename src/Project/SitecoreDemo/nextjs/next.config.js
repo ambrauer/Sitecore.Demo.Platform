@@ -82,19 +82,6 @@ const nextConfig = {
         source: '/account/:path*',
         destination: `${jssConfig.sitecoreApiHost}/account/:path*`,
       },
-      // Attempted to only rewrite POST requests. This worked, but still had some issues with redirect response...
-      // {
-      //   source: '/account',
-      //   // No way to filter by HTTP method (POST), Content-Type seemed next best option
-      //   has: [
-      //     {
-      //       type: 'header',
-      //       key: 'Content-Type',
-      //       value: 'application/x-www-form-urlencoded',
-      //     }
-      //   ],
-      //   destination: `${jssConfig.sitecoreApiHost}/account`,
-      // },
     ];
   },
   

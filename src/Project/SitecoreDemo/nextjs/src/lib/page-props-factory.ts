@@ -6,6 +6,7 @@ import {
   LayoutService,
   RestLayoutService,
   editingDataService,
+  EditingPreviewData,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 import { SitecorePageProps } from 'lib/page-props';
 import { componentModule } from 'temp/componentFactory';
@@ -74,7 +75,9 @@ export class SitecorePagePropsFactory {
        * Preview mode
        */
       // If we're in preview (editing) mode, use data already sent along with the editing request
-      const data = await editingDataService.getEditingData(context.previewData);
+      const data = await editingDataService.getEditingData(
+        context.previewData as EditingPreviewData
+      );
       if (!data) {
         throw new Error(
           `Unable to get editing data for preview ${JSON.stringify(context.previewData)}`
