@@ -31,6 +31,8 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
   return (
     <>
       <Head>
+        <Placeholder name="head" rendering={route} />
+
         <link
           href="/-/media/Feature/Experience-Accelerator/Bootstrap/Bootstrap/Styles/optimized-min.css?t=20210629T222947Z"
           rel="stylesheet"
@@ -47,14 +49,6 @@ const Layout = ({ layoutData }: LayoutProps): JSX.Element => {
           href="/-/media/Themes/Demo-SXA-Sites/Lighthouse/styles/pre-optimized-min.css?t=20150515T071943:635672711833756301Z"
           rel="stylesheet"
         />
-
-        {/* <Placeholder name="head" rendering={route} /> */}
-
-        <script src="/sitecore%20modules/Web/ExperienceForms/scripts/jquery-3.4.1.min.js"></script>
-        <script src="/sitecore%20modules/Web/ExperienceForms/scripts/jquery.validate.min.js"></script>
-        <script src="/sitecore%20modules/Web/ExperienceForms/scripts/jquery.unobtrusive-ajax.min.js"></script>
-        <script src="/sitecore%20modules/Web/ExperienceForms/scripts/form.tracking.js"></script>
-        <script src="/sitecore%20modules/Web/ExperienceForms/scripts/form.conditions.js"></script>
       </Head>
 
       {/*

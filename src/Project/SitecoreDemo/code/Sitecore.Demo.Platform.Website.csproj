@@ -98,6 +98,7 @@
     <Content Include="App_Config\Include\Project\Sitecore.Demo.Platform.Website.CoveoIndexing.config.demo" />
     <Content Include="App_Config\Include\Project\Sitecore.Demo.Horizon.Patch.Delete.Hotfix.config" />
     <Content Include="App_Config\Include\Project\Sitecore.Demo.Platform.Website.Serialization.Training.config" />
+    <Content Include="App_Config\Include\Project\Sitecore.Demo.Platform.Website.JSS.config" />
     <None Include="sitecore.demo.platform.version.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
